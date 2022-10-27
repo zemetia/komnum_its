@@ -1,6 +1,6 @@
 cek = lambda x: 0 if not x else x/abs(x)
 
-class Bolzano:
+class RegulaFalsi:
     def __init__(self, func, bottomBound:float = 1, topBound:float = 3):
         self.func = func
         self.bottomBound = bottomBound
@@ -9,7 +9,7 @@ class Bolzano:
         self.generate()
 
     def computeNext(self, bottom, top):
-        next = bottom + (top - bottom) / 2
+        next = top - (self.func(top) * (bottom - top))/(self.func(bottom) - self.func(top))
         return { 
             "bottomBound": bottom,
             "f_bottomBound": self.func(bottom),
@@ -21,8 +21,8 @@ class Bolzano:
 
     def setNextBound(self, data: dict):
         return (
-            data['nextBound'] if cek(data['f_bottomBound']) == cek(data['f_nextBound']) else data['bottomBound'],
-            data['nextBound'] if cek(data['f_bottomBound']) != cek(data['f_nextBound']) else data['topBound']
+            data['nextBound'],
+            data['topBound'] if data['f_nextBound'] < data['f_bottomBound'] else data['bottomBound']
         )
     
     def generate(self, iteration:int = 5):
