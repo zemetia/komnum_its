@@ -1,4 +1,4 @@
-# komnum_its
+# Komputasi Numerik Python Program
 
 untuk pembuatan module diusahakan untuk dibuat dengan bentuk Class terstruktur<br />
 sehingga nantinya dapat dipanggil sebagai sebuah module<br />
