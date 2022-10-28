@@ -1,5 +1,5 @@
 # Accolade Method
-Contribution:
+Contributor:
 - Yoel Mountanus Sitorus ( zemetia )
 
 # How to Use
