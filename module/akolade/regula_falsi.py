@@ -17,7 +17,7 @@ class RegulaFalsi:
             "f_nextBound": self.func(next) 
             }
 
-    def setNextBound(self, data: dict):
+    def getNextBound(self, data: dict):
         return (
             data['nextBound'],
             data['topBound'] if data['f_nextBound'] < data['f_bottomBound'] else data['bottomBound']
@@ -28,6 +28,6 @@ class RegulaFalsi:
 
         self.data.append(self.computeNext(self.bottomBound, self.topBound))
         for i in range(iteration):
-            bottom, top = self.setNextBound(self.data[i])
+            bottom, top = self.getNextBound(self.data[i])
             self.data.append(self.computeNext(bottom, top))
 

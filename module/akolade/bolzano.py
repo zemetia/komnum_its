@@ -20,7 +20,7 @@ class Bolzano:
             "f_nextBound": self.func(next) 
             }
 
-    def setNextBound(self, data: dict):
+    def getNextBound(self, data: dict):
         return (
             data['nextBound'] if Bolzano.check(data['f_bottomBound']) == Bolzano.check(data['f_nextBound']) else data['bottomBound'],
             data['nextBound'] if Bolzano.check(data['f_bottomBound']) != Bolzano.check(data['f_nextBound']) else data['topBound']
@@ -31,6 +31,6 @@ class Bolzano:
 
         self.data.append(self.computeNext(self.bottomBound, self.topBound))
         for i in range(iteration):
-            bottom, top = self.setNextBound(self.data[i])
+            bottom, top = self.getNextBound(self.data[i])
             self.data.append(self.computeNext(bottom, top))
 
