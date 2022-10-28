@@ -14,6 +14,6 @@ class Trapezoida:
         x0 = tpb - (tmb * self.boundOne)
         x1 = tpb + (tmb * self.boundOne)
 
-        result = (self.func(x0) * tmb) + (self.func(x0) * tmb)
+        result = (self.func(x0) * tmb) + (self.func(x1) * tmb)
         return result
 
