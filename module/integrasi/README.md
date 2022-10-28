@@ -1,4 +1,4 @@
-# Accolade Method
+# Numeric Integration
 Contributor:
 - Yoel Mountanus Sitorus ( zemetia )
 
