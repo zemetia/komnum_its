@@ -10,3 +10,6 @@ branch akan direview oleh anggota lain dan mungkin akan direvisi sesuai persetuj
 Metode Akolade: Yoel - zemetia<br />
 Metode Terbuka: Aryan - yannnshafaw<br />
 Metode Regresi: Darren - Mikask1<br />
+
+# Method Section
+- [Accolade Method](/module/akolade) 
