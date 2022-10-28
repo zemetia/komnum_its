@@ -46,5 +46,5 @@ table = pd.DataFrame(regula.data)
 print(table)
 ```
 <br />
-contoh hasil dari code diatas
-![ResultRegulaFalsi](../../src/images/)
+contoh hasil dari code diatas<br />
+![ResultRegulaFalsi](../../src/images/accolade_regulafalsi_result.png)
