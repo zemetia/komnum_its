@@ -1,5 +1,6 @@
 import math
 
+#lebih bagus jadi fungsi
 class Kuadratur:
     def __init__(self, func, bottomBound:float = 1, topBound:float = 3):
         self.func = func

@@ -14,34 +14,53 @@ from integrasi.kuadratur import Kuadratur
 Persiapkan fungsi yang akan di proses<br />
 dengan contoh seperti dibawah
 ```py
-fungsi = lambda x: (1 - (0.6)*x) / x
+fungsi = lambda x: math.pow(math.e, x)
 
 #            ATAU
 
-def fungsi(x): return (1 - (0.6)*x) / x
+def fungsi(x): return math.pow(math.e, x)
 ```
 
-Sebagai contoh akan menggunakan salah satu module<br />
-dan menampilkannya menggunakan pandas
+setiap module menggunakan cara yang berbeda untuk pengoprasian
+
+## Trapezoida
 ```py
-from integrasi.regula_falsi import RegulaFalsi
-import pandas as pd
+from integrasi.trapezoida import Trapezoida
 
-#RegulaFalsi(function, bottomBound: float, topBound: float)
-fungsi = lambda x: (1 - (0.6)*x) / x
-regula = RegulaFalsi(fungsi, 1, 2)
+#Trapezoida(function, bottomBound: float, topBound: float)
+fungsi = lambda x: math.pow(math.e, x)
+trapezoida = Trapezoida(fungsi, 1, 3)
+result = trapezoida.generate(section=2) #default section adalah 5
+print(result['integration'], result['tipCorrection'])
 
-#class dari metode akan otomatis generate hasil sebanyak 5 iterasi pada initialisasi
-table = pd.DataFrame(regula.data)
-print(table)
 ```
-Pada saat initialisasi `RegulaFalsi(...)` secara otomatis akan generate 5 iterasi <br />
-kita dapat menggunakan fungsi `generate(iteration: int)` untuk generate data lagi
+akan mendapatkan result dari hasil integrasi fungsi yang diberikan
 
+## Simpson
+
+Simpson memiliki 2 fungsi untuk menghitung integrasi<br />
+yaitu 1/3 `.computeOnePerThree(section)` dan 3/8 `.computeThreePerEight(section)`
 ```py
-regula.generate(10)
-table = pd.DataFrame(regula.data)
-print(table)
+from integrasi.simpson import Simpson
+
+#Simpson(function, bottomBound: float, topBound: float)
+fungsi = lambda x: math.pow(math.e, x)
+simpson = Simpson(fungsi, 1, 3)
+
+# keakuratan hasil dari penggunaan 1/3 dan 3/8 tergantung dari fungsi yang di berikan
+resultOPT = simpson.computeOnePerThree() #default section adalah 5
+resultTPE = simpson.computeThreePerEight(10) #default section adalah 5
+print(resultOPT, resultTPE)
 ```
-contoh hasil dari code diatas <br />
-<img src="https://github.com/zemetia/komnum_its/blob/metode_akolade/src/images/accolade_regulafalsi_result.png">
+
+## Kuadratur
+
+Metode kuadratur merupakan metode yang paling sederhana dalam komputasi</br>
+tidak memiliki section seperti 2 metode sebelumnya
+```
+from integrasi.kuadratur import Kuadratur
+
+fungsi = lambda x: math.pow(math.e, x)
+kuadratur = Kuadratur(fungsi, 1, 3)
+print(kuadratur.computeIntegration())
+```
