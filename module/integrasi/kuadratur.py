@@ -1,6 +1,6 @@
 import math
 
-class Trapezoida:
+class Kuadratur:
     def __init__(self, func, bottomBound:float = 1, topBound:float = 3):
         self.func = func
         self.bottomBound = bottomBound
@@ -8,7 +8,7 @@ class Trapezoida:
         self.boundOne = 1/math.sqrt(3)
         self.data = {}
 
-    def computeIntegration(self, section:int) -> float:
+    def computeIntegration(self) -> float:
         tpb = (self.topBound + self.bottomBound) / 2
         tmb = (self.topBound - self.bottomBound) / 2
         x0 = tpb - (tmb * self.boundOne)
