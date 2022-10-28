@@ -8,17 +8,21 @@ wajib membuat branch baru untuk setiap bagian seperti alokade, terbuka, dll<br /
 branch akan direview oleh anggota lain dan mungkin akan direvisi sesuai persetujuan author codenya
 
 Metode Akolade: 
-- Yoel - zemetia
+- Yoel ( zemetia )
 
 Metode Terbuka: 
-- Aryan - yannnshafaw
-- Dafian - Rencist
+- Aryan ( yannnshafaw )
+- Dafian ( Rencist )
 
 Metode Regresi:
-- Darren - Mikask1
+- Darren ( Mikask1 )
+
+Integrasi Numerik:
+- Yoel ( zemetia )
 
 
 # Method Section
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
 - [Regression Methods](/module/regression) | Metode Regresi
+- [Numeric Integration](/module/integrasi) | Integrasi Numerik
