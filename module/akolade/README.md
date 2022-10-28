@@ -1,5 +1,5 @@
 # Accolade Method
-Contribution:
+Contributor:
 - Yoel Mountanus Sitorus ( zemetia )
 
 # How to Use
@@ -9,7 +9,6 @@ from akolade.tabulasi import Tabulasi
 from akolade.bolzano import Bolzano
 from akolade.regula_falsi import RegulaFalsi
 ```
-<br />
 
 Persiapkan fungsi yang akan di proses<br />
 dengan contoh seperti dibawah
@@ -20,7 +19,6 @@ fungsi = lambda x: (1 - (0.6)*x) / x
 
 def fungsi(x): return (1 - (0.6)*x) / x
 ```
-<br />
 
 Sebagai contoh akan menggunakan salah satu module<br />
 dan menampilkannya menggunakan pandas
@@ -36,7 +34,6 @@ regula = RegulaFalsi(fungsi, 1, 2)
 table = pd.DataFrame(regula.data)
 print(table)
 ```
-<br />
 Pada saat initialisasi `RegulaFalsi(...)` secara otomatis akan generate 5 iterasi <br />
 kita dapat menggunakan fungsi `generate(iteration: int)` untuk generate data lagi
 
@@ -45,6 +42,5 @@ regula.generate(10)
 table = pd.DataFrame(regula.data)
 print(table)
 ```
-<br />
 contoh hasil dari code diatas <br />
 <img src="https://github.com/zemetia/komnum_its/blob/metode_akolade/src/images/accolade_regulafalsi_result.png">
