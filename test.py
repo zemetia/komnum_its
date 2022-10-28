@@ -1,7 +1,10 @@
-#from module.bolzano import Bolzano
-from module.regula_falsi import RegulaFalsi
+#from module.akolade.bolzano import Bolzano
+from module.akolade.regula_falsi import RegulaFalsi
+from module.terbuka.fixed_point_iteration import FixedPointIteration
+from module.terbuka.secant import Secant
+import math
 import pandas as pd
-fungsi = lambda x: (1 - (0.6)*x) / x
-soal1 = RegulaFalsi(fungsi, 1, 2)
-df = pd.DataFrame(soal1.data)
+fungsi = lambda x: math.e**(-x) - x
+soal = Secant(fungsi)
+df = pd.DataFrame(soal.data)
 print(df)
