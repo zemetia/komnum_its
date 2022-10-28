@@ -8,5 +8,5 @@ wajib membuat branch baru untuk setiap bagian seperti alokade, terbuka, dll<br /
 branch akan direview oleh anggota lain dan mungkin akan direvisi sesuai persetujuan author codenya
 
 Metode Akolade: Yoel - zemetia<br />
-Metode Terbuka: Aryan<br />
+Metode Terbuka: Aryan - yannnshafaw<br />
 Metode Regresi: Darren - Mikask1<br />
