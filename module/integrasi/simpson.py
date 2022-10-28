@@ -5,8 +5,6 @@ class Simpson:
         self.func = func
         self.bottomBound = bottomBound
         self.topBound = topBound
-        self.data = {}
-        self.generate()
 
     def getDeltaX(self):
         return abs(self.topBound - self.bottomBound)

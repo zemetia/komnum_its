@@ -6,7 +6,6 @@ class Trapezoida:
         self.bottomBound = bottomBound
         self.topBound = topBound
         self.data = {}
-        self.generate()
 
     def createSetData(self, section:int) -> float:
         # num=section+1; ex: we need 5 values beetwen bottom and top bound
