@@ -12,4 +12,5 @@ Metode Terbuka: Aryan - yannnshafaw<br />
 Metode Regresi: Darren - Mikask1<br />
 
 # Method Section
-- [Accolade Method](/module/akolade) 
+- [Accolade Methods](/module/akolade) | Metode Akolade
+- [Open Methods](/module/akolade) | Metode Terbuka
