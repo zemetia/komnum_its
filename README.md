@@ -14,3 +14,4 @@ Metode Regresi: Darren - Mikask1<br />
 # Method Section
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
+- [Regression Methods](/module/regression) | Metode Regresi
