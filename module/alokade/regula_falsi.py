@@ -1,5 +1,3 @@
-cek = lambda x: 0 if not x else x/abs(x)
-
 class RegulaFalsi:
     def __init__(self, func, bottomBound:float = 1, topBound:float = 3):
         self.func = func
