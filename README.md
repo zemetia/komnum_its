@@ -1,4 +1,4 @@
-# Komputasi Numerik Python Program
+# IF ITS Komputasi Numerik Python Module
 
 untuk pembuatan module diusahakan untuk dibuat dengan bentuk Class terstruktur<br />
 sehingga nantinya dapat dipanggil sebagai sebuah module<br />
