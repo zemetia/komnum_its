@@ -12,4 +12,3 @@ class FixedPointIteration:
         self.data["point"] = [self.point]
         for i in range(iteration):
             self.data["point"].append(self.compute_next())
-        pass
