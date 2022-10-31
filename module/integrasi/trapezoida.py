@@ -63,7 +63,7 @@ class Trapezoida:
         tip = (self.getDeltaX()/12) * (f_top - f_bottom)
         return self.computeIntegration(section) - tip
 
-    def generate(self, section:int = 5) -> float:
+    def getIntegration(self, section:int = 5) -> float:
         if self.checkType("none"):
             print("there is no datas/function")
             return 
