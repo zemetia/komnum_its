@@ -20,9 +20,12 @@ Metode Regresi:
 Integrasi Numerik:
 - Yoel ( zemetia )
 
+Persamaan Diferensial Biasa Satu Langkah:
+- Vino ( mvinorian )
 
 # Method Section
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
 - [Regression Methods](/module/regression) | Metode Regresi
 - [Numeric Integration](/module/integrasi) | Integrasi Numerik
+- [Single-Step ODE](/module/pdb_single_step) | PDB Satu Langkah
