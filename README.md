@@ -17,6 +17,9 @@ Metode Terbuka:
 Metode Regresi:
 - Darren ( Mikask1 )
 
+Metode Interpolation:
+- Caknoo ( Caknoooo )
+
 Integrasi Numerik:
 - Yoel ( zemetia )
 
@@ -25,4 +28,5 @@ Integrasi Numerik:
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
 - [Regression Methods](/module/regression) | Metode Regresi
+- [Interpolation](/module/interpolation) | Metode Interpolasi
 - [Numeric Integration](/module/integrasi) | Integrasi Numerik
