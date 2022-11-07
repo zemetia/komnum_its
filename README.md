@@ -8,20 +8,20 @@ wajib membuat branch baru untuk setiap bagian seperti alokade, terbuka, dll<br /
 branch akan direview oleh anggota lain dan mungkin akan direvisi sesuai persetujuan author codenya
 
 Metode Akolade: 
-- Yoel ( zemetia )
+- [Yoel](https://github.com/zemetia/)
 
 Metode Terbuka: 
-- Aryan ( yannnshafaw )
-- Dafian ( Rencist )
+- [Aryan](https://github.com/yannnshafaw/)
+- [Dafian](https://github.com/Rencist/)
 
 Metode Regresi:
-- Darren ( Mikask1 )
+- [Darren](https://github.com/Mikask1/)
 
 Integrasi Numerik:
-- Yoel ( zemetia )
+- [Yoel](https://github.com/zemetia/)
 
 Persamaan Diferensial Biasa Satu Langkah:
-- Vino ( mvinorian )
+- [Vino](https://github.com/mvinorian/)
 
 # Method Section
 - [Accolade Methods](/module/akolade) | Metode Akolade
