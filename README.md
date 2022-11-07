@@ -17,6 +17,10 @@ Metode Terbuka:
 Metode Regresi:
 - [Darren](https://github.com/Mikask1/)
 
+Metode Interpolasi:
+- [Cakno](https://github.com/Caknoooo/)
+- [Yoel](https://github.com/zemetia/)
+
 Integrasi Numerik:
 - [Yoel](https://github.com/zemetia/)
 
