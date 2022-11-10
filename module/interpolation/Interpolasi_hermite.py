@@ -2,7 +2,7 @@ import numpy as np
 from functools import reduce
 from math import sin
 
-class Lagrange:
+class Hermite:
     def __init__( self, data: dict ) -> None:
         self.verifDataLength(data)
 
@@ -21,8 +21,8 @@ class Lagrange:
         return [(sin(value - data)) for data in self.data['x']]
 
     def computeAtIndex(self, upper_data: list, bottom_data: list, fx: float) -> float:
-        upper = Lagrange.multiply(upper_data)
-        bottom = Lagrange.multiply(bottom_data)
+        upper = Hermite.multiply(upper_data)
+        bottom = Hermite.multiply(bottom_data)
         return (upper/bottom) * fx
 
     def interpolation(self, value: float) -> float:
@@ -45,5 +45,5 @@ contoh_data = {
     'fx': [0.0977, 0.0088, -0.1577, -0.2192]
 }
 
-interpolasi = Lagrange(contoh_data)
+interpolasi = Hermite(contoh_data)
 print(interpolasi.interpolation(0.6))   
