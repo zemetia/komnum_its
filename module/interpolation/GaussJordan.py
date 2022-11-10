@@ -1,4 +1,5 @@
 #Elimination methods
+import numpy as np
 M = 10
 
 class gaussJordan:
