@@ -1,6 +1,7 @@
 import numpy as np
 
 class gauss_forward:
+    # init 
     def __init__(self, data_x, data_y, n):
         self.x = data_x
         self.y = data_y
