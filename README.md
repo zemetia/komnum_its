@@ -21,6 +21,9 @@ Metode Interpolasi:
 - [Cakno](https://github.com/Caknoooo/)
 - [Yoel](https://github.com/zemetia/)
 
+Metode Interpolation:
+- Caknoo ( Caknoooo )
+
 Integrasi Numerik:
 - [Yoel](https://github.com/zemetia/)
 
@@ -31,5 +34,6 @@ Persamaan Diferensial Biasa Satu Langkah:
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
 - [Regression Methods](/module/regression) | Metode Regresi
+- [Interpolation](/module/interpolation) | Metode Interpolasi
 - [Numeric Integration](/module/integrasi) | Integrasi Numerik
 - [Single-Step ODE](/module/pdb_single_step) | PDB Satu Langkah
