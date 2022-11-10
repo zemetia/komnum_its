@@ -21,9 +21,6 @@ Metode Interpolasi:
 - [Cakno](https://github.com/Caknoooo/)
 - [Yoel](https://github.com/zemetia/)
 
-Metode Interpolation:
-- Caknoo ( Caknoooo )
-
 Integrasi Numerik:
 - [Yoel](https://github.com/zemetia/)
 
