@@ -4,11 +4,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 class interpolation_polynomial:
+    # init
     def __init__(self):
-        # cek data frame
         self.inisialize()
+        # cek data frame
         data = pd.DataFrame({'x' : self.data_x, 'f(x)' : self.data_y})
-        #print(data)
+        # print(data)
         self.generatePolynomial(self.p, self.data_x, self.data_y, len(self.data_x))
         
     # Create Tabel
