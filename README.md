@@ -27,6 +27,9 @@ Integrasi Numerik:
 Persamaan Diferensial Biasa Satu Langkah:
 - [Vino](https://github.com/mvinorian/)
 
+Persamaan Diferensial Biasa Multi Step:
+- [Yoel](https://github.com/zemetia/)
+
 # Method Section
 - [Accolade Methods](/module/akolade) | Metode Akolade
 - [Open Methods](/module/terbuka) | Metode Terbuka
@@ -34,3 +37,4 @@ Persamaan Diferensial Biasa Satu Langkah:
 - [Interpolation](/module/interpolation) | Metode Interpolasi
 - [Numeric Integration](/module/integrasi) | Integrasi Numerik
 - [Single-Step ODE](/module/pdb_single_step) | PDB Satu Langkah
+- [Multi-Step ODE](/module/pdb_multi_step) | PDB Beberapa Langkah
