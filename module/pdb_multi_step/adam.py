@@ -1,5 +1,3 @@
-from functools import reduce
-
 class Adam:
     def __init__( self, function) -> None:
         self.function = function
@@ -16,23 +14,22 @@ class Adam:
             print("Data format is unmatch")
             return False
 
-    def multiply(data: list) -> float:
-        return reduce(lambda x, y: x*y, data)
-
     def changeFunction(self, function):
         self.function = function
+
+    def getAllFuncData(self):
+        f_result = []
+        for i in range(4, 0, -1):
+            f_result.append((self.function(self.data['x'][i-1], self.data['y'][i-1]) * self.list[i-1]))
+        return f_result
 
     def compute(self, data: dict) -> float:
         if(not self.verifDataLength(data)):
             return -0.01
         yn = self.data['y'][-1]
         h = self.data['x'][1] - self.data['x'][0]
-        f_result = []
 
-        for i in range(4, 0, -1):
-            f_result.append((self.function(self.data['x'][i-1], self.data['y'][i-1]) * self.list[i-1]))
-
-        result = sum(f_result)
+        result = sum(self.getAllFuncData())
 
         return yn + (h/24) * result
 
