@@ -23,7 +23,7 @@ class Adam:
             f_result.append((self.function(self.data['x'][i-1], self.data['y'][i-1]) * self.list[i-1]))
         return f_result
 
-    def compute(self, data: dict) -> float:
+    def predict(self, data: dict) -> float:
         if(not self.verifDataLength(data)):
             return -0.01
         yn = self.data['y'][-1]
@@ -33,8 +33,6 @@ class Adam:
 
         return yn + (h/24) * result
 
-
-
 fungsi = lambda x, y: x + y
 contoh_data = {
     'x': [0.2, 0.3, 0.4, 0.5],
@@ -42,4 +40,4 @@ contoh_data = {
 }
 
 method = Adam(fungsi)
-print(method.compute(contoh_data))
+print(method.predict(contoh_data))
